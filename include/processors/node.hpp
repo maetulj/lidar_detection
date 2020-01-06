@@ -14,7 +14,7 @@ struct Node
     std::shared_ptr<Node> left;
     std::shared_ptr<Node> right;
 
-    Node(const PointT arr, const int set_id)
+    Node(const PointT &arr, const int set_id)
     : point(arr)
     , id(set_id)
     {}

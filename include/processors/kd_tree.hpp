@@ -52,7 +52,7 @@ private:
     void insert(
         std::shared_ptr<Node<PointT>> &node,
         const uint depth,
-        const PointT point,
+        const PointT &point,
         const int id
     )
     {
@@ -91,7 +91,7 @@ private:
     void search(
         std::shared_ptr<Node<PointT>> &node,
         const uint depth,
-        const PointT target,
+        const PointT &target,
         const double distance_tol,
         std::vector<int> &ids
     )
