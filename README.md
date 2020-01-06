@@ -59,6 +59,9 @@ $> cmake ..
 $> make
 $> ./lidar_detection
 ```
+> For better optimization build the program in **Release** mode by modifying the **cmake** step to:
+>
+> `cmake -DCMAKE_BUILD_TYPE=Release ..`
 
 ## Configuration
 The processing can be configured using the file *src/config.json*. This file contains the different parameters for processing and is read at the start of processing each frame:

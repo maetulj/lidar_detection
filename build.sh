@@ -4,7 +4,7 @@ echo "Building the Lidar Detection Program"
 mkdir build || true
 cd build
 
-cmake ..
+cmake -DCMAKE_BUILD_TYPE=Release ..
 make 
 
 cd ..
