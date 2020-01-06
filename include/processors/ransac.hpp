@@ -72,6 +72,12 @@ std::vector<int> Ransac(
         // Cross product (normal to the plane).
 		auto v1_x_v2 = v1.cross(v2);
 
+		// Check that the cross product is not zero and the plane was calculated.
+		if (v1_x_v2.norm() == 0)
+		{
+			continue;
+		}
+
 		const double A = v1_x_v2.x();
 		const double B = v1_x_v2.y();
 		const double C = v1_x_v2.z();
@@ -82,7 +88,7 @@ std::vector<int> Ransac(
 		// Inliers for this plane.
 		std::unordered_set<int> inliers_tmp;
 
-		// Measure the distance between every point and the line.
+		// Measure the distance between every point and the plane.
 		for (int i = 0; i < cloud->points.size(); ++i)
 		{
 			const double distance = std::abs(A * cloud->points[i].x + B * cloud->points[i].y + C * cloud->points[i].z + D) / root;
