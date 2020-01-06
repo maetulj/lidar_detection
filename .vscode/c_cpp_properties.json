@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/**",
+                "/usr/include/pcl-1.8",
+                "/usr/include/eigen3"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "intelliSenseMode": "gcc-x64",
+            "compilerArgs": [],
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

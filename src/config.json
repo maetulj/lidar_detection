@@ -1,0 +1,36 @@
+{
+    "filtering": {
+        "voxel_size": 0.25,
+        "min": {
+            "x": -10,
+            "y": -6,
+            "z": -2
+        },
+        "max": {
+            "x": 15,
+            "y": 6,
+            "z": 0
+        }
+    },
+    "segmentation": {
+        "iterations": 20,
+        "distance_threshold": 0.2
+    },
+    "clustering": {
+        "tolerance": 0.6,
+        "min": 6,
+        "max": 20000
+    },
+    "rooftop": {
+        "min": {
+            "x": -1.5,
+            "y": -1.7,
+            "z": -1
+        },
+        "max": {
+            "x": 2.6,
+            "y": 1.7,
+            "z": -0.4
+        }
+    }
+}
